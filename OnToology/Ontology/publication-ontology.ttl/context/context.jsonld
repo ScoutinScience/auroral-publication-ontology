@@ -1,0 +1,105 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#abstract",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "score" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#score",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "pdfUrl" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#pdfUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "publicationDate" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#publicationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "Publication" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Publication"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "matchScore" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#matchScore",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "doi" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#doi",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "organisation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#organisation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "conclusion" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#conclusion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Topic" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Topic"
+    },
+    "Domain" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Domain"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "hasAuthor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasAuthor",
+      "@type" : "@id"
+    },
+    "introduction" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#introduction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTopic" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasTopic",
+      "@type" : "@id"
+    },
+    "hasKeyword" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasKeyword",
+      "@type" : "@id"
+    },
+    "Keyword" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Keyword"
+    },
+    "title" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "publisher" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#publisher",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Author" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Author"
+    },
+    "hasDomain" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasDomain",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "language" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#language",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAffiliation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasAffiliation",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Affiliation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Affiliation"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "pub:Domain" "pub:Keyword" "pub:Topic" "pub:Affiliation" "pub:Author" "pub:Publication" ; /*classes style*/
+	"pub:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = "dcterms:license" ];
+	"pub:Publication" -> "xsd:string" [ label = "pub:publisher" ];
+	"pub:Publication" -> "xsd:string" [ label = "pub:doi" ];
+	"pub:Publication" -> "xsd:string" [ label = "pub:organisation" ];
+	"pub:Publication" -> "xsd:float" [ label = "pub:matchScore" ];
+	"pub:Publication" -> "pub:Keyword" [ label = "pub:hasKeyword" ];
+	"pub:Publication" -> "pub:Domain" [ label = "pub:hasDomain" ];
+	"pub:Publication" -> "pub:Topic" [ label = "pub:hasTopic" ];
+	"pub:Publication" -> "xsd:string" [ label = "pub:conclusion" ];
+	"pub:Publication" -> "xsd:string" [ label = "pub:introduction" ];
+	"pub:Publication" -> "xsd:anyURI" [ label = "pub:pdfUrl" ];
+	"pub:Publication" -> "pub:Author" [ label = "pub:hasAuthor" ];
+	"pub:Publication" -> "xsd:float" [ label = "pub:score" ];
+	"pub:Publication" -> "xsd:date" [ label = "pub:publicationDate" ];
+	"pub:Publication" -> "xsd:string" [ label = "pub:title" ];
+	"pub:Publication" -> "pub:Affiliation" [ label = "pub:hasAffiliation" ];
+	"pub:Publication" -> "xsd:string" [ label = "pub:abstract" ];
+	"pub:Publication" -> "xsd:string" [ label = "pub:language" ];
+
+}

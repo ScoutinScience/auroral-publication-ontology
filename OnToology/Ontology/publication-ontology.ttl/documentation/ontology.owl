@@ -164,6 +164,30 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/publication#affiliation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/publication#affiliation">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/publication#Affiliation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of the affiliation.</rdfs:comment>
+        <rdfs:label>Affiliation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/publication#author -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/publication#author">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/publication#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of the author.</rdfs:comment>
+        <rdfs:label>Author</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/publication#conclusion -->
 
 
@@ -188,6 +212,18 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/publication#domain -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/publication#domain">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/publication#Domain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of the domain.</rdfs:comment>
+        <rdfs:label>Domain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/publication#introduction -->
 
 
@@ -196,6 +232,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The introduction of the publication.</rdfs:comment>
         <rdfs:label>Introduction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/publication#keyword -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/publication#keyword">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/publication#Keyword"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of the keyword.</rdfs:comment>
+        <rdfs:label>Keyword</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -231,7 +279,7 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/publication#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The organisation this publication belongs to.</rdfs:comment>
-        <rdfs:label>Publisher</rdfs:label>
+        <rdfs:label>Organisation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -278,7 +326,7 @@
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/publication#score">
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/publication#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment>The score of the publication.</rdfs:comment>
+        <rdfs:comment>The business potential score of the publication.</rdfs:comment>
         <rdfs:label>Score</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -292,6 +340,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The title of the publication.</rdfs:comment>
         <rdfs:label>Title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/publication#topic -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/publication#topic">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/publication#Topic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of the topic.</rdfs:comment>
+        <rdfs:label>Topic</rdfs:label>
     </owl:DatatypeProperty>
     
 

@@ -1,0 +1,502 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#description
+<http://www.w3.org/ns/shacl#description> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#name
+<http://www.w3.org/ns/shacl#name> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#pattern
+<http://www.w3.org/ns/shacl#pattern> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#contains
+<https://w3id.org/def/astrea#contains> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#generatedShapesFrom
+<https://w3id.org/def/astrea#generatedShapesFrom> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#message
+<https://w3id.org/def/astrea#message> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#statusCode
+<https://w3id.org/def/astrea#statusCode> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/shacl#PropertyShape
+<http://www.w3.org/ns/shacl#PropertyShape> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/astrea#ReportEntry
+<https://w3id.org/def/astrea#ReportEntry> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/astrea#ShapeReport
+<https://w3id.org/def/astrea#ShapeReport> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://astrea.linkeddata.es/report
+<http://astrea.linkeddata.es/report> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/def/astrea#ShapeReport> ;
+                                     <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> ,
+                                                                            <https://astrea.linkeddata.es/shapes#d3eecd8a66ed803cbed106ebf4269ad0> ,
+                                                                            <https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743> ,
+                                                                            <https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7> ,
+                                                                            <https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34> ,
+                                                                            <https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2> ,
+                                                                            <https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3> ,
+                                                                            <https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52> ,
+                                                                            <https://astrea.linkeddata.es/shapes#2d65a49de23db614e12296bc0af040b4> ,
+                                                                            <https://astrea.linkeddata.es/shapes#258412aef44e05098a7099ddb811573b> ,
+                                                                            <https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a> ,
+                                                                            <https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244> ,
+                                                                            <https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051> ,
+                                                                            <https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762> ,
+                                                                            <https://astrea.linkeddata.es/shapes#3295d7095547185d5783387d6a11f91b> ,
+                                                                            <https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345> ,
+                                                                            <https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492> ,
+                                                                            <https://astrea.linkeddata.es/shapes#6afa9e45ce0bf9eefdb0c7316f5573d3> ,
+                                                                            <https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80> ,
+                                                                            <https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b> ,
+                                                                            <https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4> ,
+                                                                            <https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4> ,
+                                                                            <https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3> ,
+                                                                            <https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc> ,
+                                                                            <https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f> ,
+                                                                            <https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789> ,
+                                                                            <https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f> ,
+                                                                            <https://astrea.linkeddata.es/shapes#876ad1c9bcadcb59bdf2cb3ecb8d1ab7> ,
+                                                                            <https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054> ;
+                                     <https://w3id.org/def/astrea#generatedShapesFrom> <https://astrea.linkeddata.es/report/0620946147> .
+
+
+###  https://astrea.linkeddata.es/report/0620946147
+<https://astrea.linkeddata.es/report/0620946147> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/def/astrea#ReportEntry> ;
+                                                 <https://w3id.org/def/astrea#message> "Shapes generated with no errors" ;
+                                                 <https://w3id.org/def/astrea#statusCode> "200"^^xsd:int .
+
+
+###  https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca
+<https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+
+
+###  https://astrea.linkeddata.es/shapes#d3eecd8a66ed803cbed106ebf4269ad0
+<https://astrea.linkeddata.es/shapes#d3eecd8a66ed803cbed106ebf4269ad0> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Keyword" ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Represents a keyword associated with a publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Keyword" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/publication#Keyword> .
+
+
+###  https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743
+<https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Score" ,
+                                                                                  "The business potential score of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:float ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The business potential score of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Score" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#score> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+
+###  https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7
+<https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "The name of the topic." ,
+                                                                                  "Topic" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The name of the topic." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Topic" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#topic> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34
+<https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Abstract" ,
+                                                                                  "The abstract of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The abstract of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Abstract" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#abstract> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2
+<https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Author" ,
+                                                                                  "The name of the author." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The name of the author." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Author" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#author> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3
+<https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Introduction" ,
+                                                                                  "The introduction of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The introduction of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Introduction" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#introduction> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52
+<https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Affiliation" ,
+                                                                                  "The name of the affiliation." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The name of the affiliation." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Affiliation" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#affiliation> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#2d65a49de23db614e12296bc0af040b4
+<https://astrea.linkeddata.es/shapes#2d65a49de23db614e12296bc0af040b4> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Publication" ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Represents a publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Publication" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/publication#Publication> .
+
+
+###  https://astrea.linkeddata.es/shapes#258412aef44e05098a7099ddb811573b
+<https://astrea.linkeddata.es/shapes#258412aef44e05098a7099ddb811573b> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Domain" ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Represents a subject domain of a publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Domain" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/publication#Domain> .
+
+
+###  https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a
+<https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Publication Date" ,
+                                                                                  "The publication date." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:date ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The publication date." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Publication Date" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#publicationDate> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+
+###  https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244
+<https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Conclusion" ,
+                                                                                  "The conclusion of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The conclusion of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Conclusion" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#conclusion> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051
+<https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "The title of the publication." ,
+                                                                                  "Title" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The title of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Title" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#title> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762
+<https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Links a publication to its keywords." ,
+                                                                                  "has keyword" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Links a publication to its keywords." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has keyword" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#hasKeyword> .
+
+
+###  https://astrea.linkeddata.es/shapes#3295d7095547185d5783387d6a11f91b
+<https://astrea.linkeddata.es/shapes#3295d7095547185d5783387d6a11f91b> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Affiliation" ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Represents an affiliation associated with a publication or author." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Affiliation" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/publication#Affiliation> .
+
+
+###  https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345
+<https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Domain" ,
+                                                                                  "The name of the domain." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The name of the domain." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Domain" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#domain> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492
+<https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Publisher" ,
+                                                                                  "The publisher of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The publisher of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Publisher" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#publisher> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#6afa9e45ce0bf9eefdb0c7316f5573d3
+<https://astrea.linkeddata.es/shapes#6afa9e45ce0bf9eefdb0c7316f5573d3> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Topic" ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Represents a topic associated with a publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Topic" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/publication#Topic> .
+
+
+###  https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80
+<https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "PDF URL" ,
+                                                                                  "URL to access the publication's PDF." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:anyURI ;
+                                                                       <http://www.w3.org/ns/shacl#description> "URL to access the publication's PDF." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "PDF URL" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#pdfUrl> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
+
+
+###  https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b
+<https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Organisation" ,
+                                                                                  "The organisation this publication belongs to." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The organisation this publication belongs to." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Organisation" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#organisation> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4
+<https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "DOI" ,
+                                                                                  "The DOI of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The DOI of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "DOI" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#doi> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4
+<https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Language" ,
+                                                                                  "The language of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The language of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Language" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#language> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3
+<https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Links a publication to its topics." ,
+                                                                                  "has topic" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/publication#Topic> ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Links a publication to its topics." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has topic" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#hasTopic> .
+
+
+###  https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc
+<https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Links a publication to its domain(s)." ,
+                                                                                  "has domain" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/publication#Domain> ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Links a publication to its domain(s)." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has domain" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#hasDomain> .
+
+
+###  https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f
+<https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Match Score" ,
+                                                                                  "The match score of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:float ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The match score of the publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Match Score" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#matchScore> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+
+###  https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789
+<https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Links a publication to its affiliation(s)." ,
+                                                                                  "has affiliation" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/publication#Affiliation> ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Links a publication to its affiliation(s)." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has affiliation" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#hasAffiliation> .
+
+
+###  https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f
+<https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Links a publication to its authors." ,
+                                                                                  "has author" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/publication#Author> ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Links a publication to its authors." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has author" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#hasAuthor> .
+
+
+###  https://astrea.linkeddata.es/shapes#876ad1c9bcadcb59bdf2cb3ecb8d1ab7
+<https://astrea.linkeddata.es/shapes#876ad1c9bcadcb59bdf2cb3ecb8d1ab7> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Author" ;
+                                                                       <http://www.w3.org/ns/shacl#description> "Represents an author of a publication." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Author" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/publication#Author> .
+
+
+###  https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054
+<https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "Keyword" ,
+                                                                                  "The name of the keyword." ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The name of the keyword." ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Keyword" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/publication#keyword> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

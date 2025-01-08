@@ -1,24 +1,29 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "pub:Domain" "pub:Keyword" "pub:Topic" "pub:Affiliation" "pub:Author" "pub:Publication" ; /*classes style*/
-	"pub:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = "dcterms:license" ];
-	"pub:Publication" -> "xsd:string" [ label = "pub:publisher" ];
-	"pub:Publication" -> "xsd:string" [ label = "pub:doi" ];
-	"pub:Publication" -> "xsd:string" [ label = "pub:organisation" ];
-	"pub:Publication" -> "xsd:float" [ label = "pub:matchScore" ];
-	"pub:Publication" -> "pub:Keyword" [ label = "pub:hasKeyword" ];
-	"pub:Publication" -> "pub:Domain" [ label = "pub:hasDomain" ];
-	"pub:Publication" -> "pub:Topic" [ label = "pub:hasTopic" ];
-	"pub:Publication" -> "xsd:string" [ label = "pub:conclusion" ];
-	"pub:Publication" -> "xsd:string" [ label = "pub:introduction" ];
-	"pub:Publication" -> "xsd:anyURI" [ label = "pub:pdfUrl" ];
-	"pub:Publication" -> "pub:Author" [ label = "pub:hasAuthor" ];
-	"pub:Publication" -> "xsd:float" [ label = "pub:score" ];
-	"pub:Publication" -> "xsd:date" [ label = "pub:publicationDate" ];
-	"pub:Publication" -> "xsd:string" [ label = "pub:title" ];
-	"pub:Publication" -> "pub:Affiliation" [ label = "pub:hasAffiliation" ];
-	"pub:Publication" -> "xsd:string" [ label = "pub:abstract" ];
-	"pub:Publication" -> "xsd:string" [ label = "pub:language" ];
+node [shape = rectangle, color="orange"]; "base:Topic" "base:Publication" "base:Keyword" "base:Domain" "base:Author" "base:Affiliation" ; /*classes style*/
+	"base:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
+	"base:Publication" -> "xsd:string" [ label = "base:publisher" ];
+	"base:Author" -> "xsd:string" [ label = "base:author" ];
+	"base:Publication" -> "xsd:string" [ label = "base:doi" ];
+	"base:Publication" -> "xsd:string" [ label = "base:organisation" ];
+	"base:Publication" -> "xsd:float" [ label = "base:matchScore" ];
+	"base:Publication" -> "base:Keyword" [ label = "base:hasKeyword" ];
+	"base:Publication" -> "base:Domain" [ label = "base:hasDomain" ];
+	"base:Publication" -> "base:Topic" [ label = "base:hasTopic" ];
+	"base:Topic" -> "xsd:string" [ label = "base:topic" ];
+	"base:Publication" -> "xsd:string" [ label = "base:conclusion" ];
+	"base:Publication" -> "xsd:string" [ label = "base:introduction" ];
+	"base:Publication" -> "xsd:anyURI" [ label = "base:pdfUrl" ];
+	"base:Publication" -> "base:Author" [ label = "base:hasAuthor" ];
+	"base:Publication" -> "xsd:float" [ label = "base:score" ];
+	"base:Keyword" -> "xsd:string" [ label = "base:keyword" ];
+	"base:Domain" -> "xsd:string" [ label = "base:domain" ];
+	"base:Publication" -> "xsd:date" [ label = "base:publicationDate" ];
+	"base:Affiliation" -> "xsd:string" [ label = "base:affiliation" ];
+	"base:Publication" -> "xsd:string" [ label = "base:title" ];
+	"base:Publication" -> "base:Affiliation" [ label = "base:hasAffiliation" ];
+	"base:Publication" -> "xsd:string" [ label = "base:abstract" ];
+	"base:Publication" -> "xsd:string" [ label = "base:language" ];
 
 }

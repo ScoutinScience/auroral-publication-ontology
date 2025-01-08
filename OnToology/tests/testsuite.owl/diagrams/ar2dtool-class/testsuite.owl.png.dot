@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"vtc:Test1" -> "vtc:TestSuiteauroral-publication" [ label = "vtc:belongsTo" ];
+	"vtc:Test4" -> "vtc:TestSuiteauroral-publication" [ label = "vtc:belongsTo" ];
+	"vtc:Test2" -> "vtc:TestSuiteauroral-publication" [ label = "vtc:belongsTo" ];
+	"vtc:Test5" -> "vtc:TestSuiteauroral-publication" [ label = "vtc:belongsTo" ];
+	"vtc:Test3" -> "vtc:TestSuiteauroral-publication" [ label = "vtc:belongsTo" ];
+
+}

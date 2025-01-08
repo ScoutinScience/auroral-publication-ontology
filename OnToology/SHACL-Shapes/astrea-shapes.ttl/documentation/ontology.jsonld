@@ -1,0 +1,944 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://astrea.linkeddata.es/report",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/astrea#ShapeReport"
+  } ],
+  "https://w3id.org/def/astrea#contains" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#d3eecd8a66ed803cbed106ebf4269ad0"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#2d65a49de23db614e12296bc0af040b4"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#258412aef44e05098a7099ddb811573b"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#3295d7095547185d5783387d6a11f91b"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#6afa9e45ce0bf9eefdb0c7316f5573d3"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#876ad1c9bcadcb59bdf2cb3ecb8d1ab7"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054"
+  } ],
+  "https://w3id.org/def/astrea#generatedShapesFrom" : [ {
+    "@id" : "https://astrea.linkeddata.es/report/0620946147"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#NodeShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#PropertyShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#datatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#nodeKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#path",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#pattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#targetClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/report/0620946147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/astrea#ReportEntry"
+  } ],
+  "https://w3id.org/def/astrea#message" : [ {
+    "@value" : "Shapes generated with no errors"
+  } ],
+  "https://w3id.org/def/astrea#statusCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "200"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Introduction"
+  }, {
+    "@value" : "The introduction of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The introduction of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Introduction"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#introduction"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Affiliation"
+  }, {
+    "@value" : "The name of the affiliation."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The name of the affiliation."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Affiliation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#affiliation"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#258412aef44e05098a7099ddb811573b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Domain"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Represents a subject domain of a publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Domain"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Domain"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#2d65a49de23db614e12296bc0af040b4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Publication"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Represents a publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Publication"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Publication"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The title of the publication."
+  }, {
+    "@value" : "Title"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The title of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Title"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#title"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Links a publication to its keywords."
+  }, {
+    "@value" : "has keyword"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Keyword"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Links a publication to its keywords."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has keyword"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasKeyword"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#3295d7095547185d5783387d6a11f91b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Affiliation"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Represents an affiliation associated with a publication or author."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Affiliation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Affiliation"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Publication Date"
+  }, {
+    "@value" : "The publication date."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The publication date."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Publication Date"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#publicationDate"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Conclusion"
+  }, {
+    "@value" : "The conclusion of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The conclusion of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Conclusion"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#conclusion"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Publisher"
+  }, {
+    "@value" : "The publisher of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The publisher of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Publisher"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#publisher"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Domain"
+  }, {
+    "@value" : "The name of the domain."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The name of the domain."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Domain"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#domain"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PDF URL"
+  }, {
+    "@value" : "URL to access the publication's PDF."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "URL to access the publication's PDF."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "PDF URL"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#pdfUrl"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Organisation"
+  }, {
+    "@value" : "The organisation this publication belongs to."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The organisation this publication belongs to."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Organisation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#organisation"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DOI"
+  }, {
+    "@value" : "The DOI of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The DOI of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "DOI"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#doi"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#6afa9e45ce0bf9eefdb0c7316f5573d3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Topic"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Represents a topic associated with a publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Topic"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Topic"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Links a publication to its domain(s)."
+  }, {
+    "@value" : "has domain"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Domain"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Links a publication to its domain(s)."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has domain"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasDomain"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Language"
+  }, {
+    "@value" : "The language of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The language of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Language"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#language"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Links a publication to its topics."
+  }, {
+    "@value" : "has topic"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Topic"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Links a publication to its topics."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has topic"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasTopic"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Links a publication to its authors."
+  }, {
+    "@value" : "has author"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Author"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Links a publication to its authors."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has author"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasAuthor"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#876ad1c9bcadcb59bdf2cb3ecb8d1ab7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Author"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Represents an author of a publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Author"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Author"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Match Score"
+  }, {
+    "@value" : "The match score of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The match score of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Match Score"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#matchScore"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Links a publication to its affiliation(s)."
+  }, {
+    "@value" : "has affiliation"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Affiliation"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Links a publication to its affiliation(s)."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has affiliation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasAffiliation"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Keyword"
+  }, {
+    "@value" : "The name of the keyword."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The name of the keyword."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Keyword"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#keyword"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#d3eecd8a66ed803cbed106ebf4269ad0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Keyword"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "Represents a keyword associated with a publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Keyword"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#Keyword"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Score"
+  }, {
+    "@value" : "The business potential score of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The business potential score of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Score"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#score"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The name of the topic."
+  }, {
+    "@value" : "Topic"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The name of the topic."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Topic"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#topic"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abstract"
+  }, {
+    "@value" : "The abstract of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The abstract of the publication."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Abstract"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#abstract"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Author"
+  }, {
+    "@value" : "The name of the author."
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The name of the author."
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Author"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/publication#author"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#ReportEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#ShapeReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#generatedShapesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#message",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#statusCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

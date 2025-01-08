@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"base:ExamplePublication" -> "base:Keyword5" [ label = "base:hasKeyword" ];
+	"base:ExamplePublication" -> "base:Author5" [ label = "base:hasAuthor" ];
+	"base:ExamplePublication" -> "base:Topic3" [ label = "base:hasTopic" ];
+	"base:ExamplePublication" -> "base:Author3" [ label = "base:hasAuthor" ];
+	"base:ExamplePublication" -> "base:Author2" [ label = "base:hasAuthor" ];
+	"base:ExamplePublication" -> "base:Affiliation1" [ label = "base:hasAffiliation" ];
+	"base:ExamplePublication" -> "base:Author4" [ label = "base:hasAuthor" ];
+	"base:ExamplePublication" -> "base:Keyword6" [ label = "base:hasKeyword" ];
+	"base:ExamplePublication" -> "base:Author1" [ label = "base:hasAuthor" ];
+	"base:ExamplePublication" -> "base:Keyword7" [ label = "base:hasKeyword" ];
+	"base:ExamplePublication" -> "base:Topic2" [ label = "base:hasTopic" ];
+	"base:ExamplePublication" -> "base:Keyword1" [ label = "base:hasKeyword" ];
+	"base:ExamplePublication" -> "base:Keyword9" [ label = "base:hasKeyword" ];
+	"base:ExamplePublication" -> "base:Keyword8" [ label = "base:hasKeyword" ];
+	"base:ExamplePublication" -> "base:Keyword3" [ label = "base:hasKeyword" ];
+	"base:ExamplePublication" -> "base:Topic1" [ label = "base:hasTopic" ];
+	"base:ExamplePublication" -> "base:Domain1" [ label = "base:hasDomain" ];
+	"base:ExamplePublication" -> "base:Keyword4" [ label = "base:hasKeyword" ];
+
+}

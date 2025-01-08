@@ -1,0 +1,82 @@
+@prefix : <https://auroral.iot.linkeddata.es/def/tests/publication#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vtc: <https://w3id.org/def/vtc#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://auroral.iot.linkeddata.es/def/tests/publication#> .
+
+<https://auroral.iot.linkeddata.es/def/tests/publication#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/vtc#belongsTo
+vtc:belongsTo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/vtc#desiredBehaviour
+vtc:desiredBehaviour rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/vtc#TestCaseDesign
+vtc:TestCaseDesign rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vtc#TestSuite
+vtc:TestSuite rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/vtc#Test1
+vtc:Test1 rdf:type owl:NamedIndividual ,
+                   vtc:TestCaseDesign ;
+          vtc:belongsTo vtc:TestSuiteauroral-publication ;
+          vtc:desiredBehaviour "Publication hasAffiliation Affiliation" .
+
+
+###  https://w3id.org/def/vtc#Test2
+vtc:Test2 rdf:type owl:NamedIndividual ,
+                   vtc:TestCaseDesign ;
+          vtc:belongsTo vtc:TestSuiteauroral-publication ;
+          vtc:desiredBehaviour "Publication hasTopic Topic" .
+
+
+###  https://w3id.org/def/vtc#Test3
+vtc:Test3 rdf:type owl:NamedIndividual ,
+                   vtc:TestCaseDesign ;
+          vtc:belongsTo vtc:TestSuiteauroral-publication ;
+          vtc:desiredBehaviour "Publication hasDomain Domain" .
+
+
+###  https://w3id.org/def/vtc#Test4
+vtc:Test4 rdf:type owl:NamedIndividual ,
+                   vtc:TestCaseDesign ;
+          vtc:belongsTo vtc:TestSuiteauroral-publication ;
+          vtc:desiredBehaviour "Publication hasKeyword Keyword" .
+
+
+###  https://w3id.org/def/vtc#Test5
+vtc:Test5 rdf:type owl:NamedIndividual ,
+                   vtc:TestCaseDesign ;
+          vtc:belongsTo vtc:TestSuiteauroral-publication ;
+          vtc:desiredBehaviour "Publication hasAuthor Author" .
+
+
+###  https://w3id.org/def/vtc#TestSuiteauroral-publication
+vtc:TestSuiteauroral-publication rdf:type owl:NamedIndividual ,
+                                      vtc:TestSuite .

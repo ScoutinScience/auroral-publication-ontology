@@ -1,0 +1,295 @@
+@prefix :      <https://auroral.iot.linkeddata.es/def/publication#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743>
+        a               sh:PropertyShape ;
+        rdfs:label      "Score" , "The business potential score of the publication." ;
+        sh:datatype     xsd:float ;
+        sh:description  "The business potential score of the publication." ;
+        sh:name         "Score" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :score ;
+        sh:pattern      "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#876ad1c9bcadcb59bdf2cb3ecb8d1ab7>
+        a               sh:NodeShape ;
+        rdfs:label      "Author" ;
+        sh:description  "Represents an author of a publication." ;
+        sh:name         "Author" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2> ;
+        sh:targetClass  :Author .
+
+<https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345>
+        a               sh:PropertyShape ;
+        rdfs:label      "Domain" , "The name of the domain." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The name of the domain." ;
+        sh:name         "Domain" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :domain ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2>
+        a               sh:PropertyShape ;
+        rdfs:label      "Author" , "The name of the author." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The name of the author." ;
+        sh:name         "Author" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :author ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3>
+        a               sh:PropertyShape ;
+        rdfs:label      "has topic" , "Links a publication to its topics." ;
+        sh:class        :Topic ;
+        sh:description  "Links a publication to its topics." ;
+        sh:name         "has topic" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :hasTopic .
+
+<https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc>
+        a               sh:PropertyShape ;
+        rdfs:label      "has domain" , "Links a publication to its domain(s)." ;
+        sh:class        :Domain ;
+        sh:description  "Links a publication to its domain(s)." ;
+        sh:name         "has domain" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :hasDomain .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc> , <https://astrea.linkeddata.es/shapes#fda6de4df42895f267f0194133397dd2> , <https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b> , <https://astrea.linkeddata.es/shapes#3295d7095547185d5783387d6a11f91b> , <https://astrea.linkeddata.es/shapes#d3eecd8a66ed803cbed106ebf4269ad0> , <https://astrea.linkeddata.es/shapes#2d65a49de23db614e12296bc0af040b4> , <https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051> , <https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80> , <https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4> , <https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> , <https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52> , <https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492> , <https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7> , <https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f> , <https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345> , <https://astrea.linkeddata.es/shapes#258412aef44e05098a7099ddb811573b> , <https://astrea.linkeddata.es/shapes#6afa9e45ce0bf9eefdb0c7316f5573d3> , <https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4> , <https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3> , <https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f> , <https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3> , <https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a> , <https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762> , <https://astrea.linkeddata.es/shapes#876ad1c9bcadcb59bdf2cb3ecb8d1ab7> , <https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743> , <https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054> , <https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34> , <https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244> , <https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52>
+        a               sh:PropertyShape ;
+        rdfs:label      "Affiliation" , "The name of the affiliation." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The name of the affiliation." ;
+        sh:name         "Affiliation" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :affiliation ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80>
+        a               sh:PropertyShape ;
+        rdfs:label      "PDF URL" , "URL to access the publication's PDF." ;
+        sh:datatype     xsd:anyURI ;
+        sh:description  "URL to access the publication's PDF." ;
+        sh:name         "PDF URL" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :pdfUrl ;
+        sh:pattern      "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
+
+<https://astrea.linkeddata.es/shapes#2d65a49de23db614e12296bc0af040b4>
+        a               sh:NodeShape ;
+        rdfs:label      "Publication" ;
+        sh:description  "Represents a publication." ;
+        sh:name         "Publication" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f> , <https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34> , <https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4> , <https://astrea.linkeddata.es/shapes#754bd8f1d0168ca59b6307e7c0a7fdbc> , <https://astrea.linkeddata.es/shapes#d5c21adb4e9074097d57000b4d803743> , <https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051> , <https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f> , <https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244> , <https://astrea.linkeddata.es/shapes#6025d2192a1eceaae6522ed656e7fb80> , <https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3> , <https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a> , <https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4> , <https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789> , <https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762> , <https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b> , <https://astrea.linkeddata.es/shapes#7dcbf09783423d71af83b25c03494fe3> , <https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492> ;
+        sh:targetClass  :Publication .
+
+<https://astrea.linkeddata.es/shapes#8de37ce343ddcf75b895a1d566cfb789>
+        a               sh:PropertyShape ;
+        rdfs:label      "has affiliation" , "Links a publication to its affiliation(s)." ;
+        sh:class        :Affiliation ;
+        sh:description  "Links a publication to its affiliation(s)." ;
+        sh:name         "has affiliation" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :hasAffiliation .
+
+<https://astrea.linkeddata.es/shapes#8b25930e3b1947cd326dfa4cd50ef87f>
+        a               sh:PropertyShape ;
+        rdfs:label      "Match Score" , "The match score of the publication." ;
+        sh:datatype     xsd:float ;
+        sh:description  "The match score of the publication." ;
+        sh:name         "Match Score" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :matchScore ;
+        sh:pattern      "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#82f39c7f4416d784e3ab641f9bf0991f>
+        a               sh:PropertyShape ;
+        rdfs:label      "has author" , "Links a publication to its authors." ;
+        sh:class        :Author ;
+        sh:description  "Links a publication to its authors." ;
+        sh:name         "has author" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :hasAuthor .
+
+<https://astrea.linkeddata.es/shapes#3295d7095547185d5783387d6a11f91b>
+        a               sh:NodeShape ;
+        rdfs:label      "Affiliation" ;
+        sh:description  "Represents an affiliation associated with a publication or author." ;
+        sh:name         "Affiliation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#0d03d70f3e7a7cd8a211cf689670ba52> ;
+        sh:targetClass  :Affiliation .
+
+<https://astrea.linkeddata.es/shapes#316b3b3698855b14d04ec727b4b97051>
+        a               sh:PropertyShape ;
+        rdfs:label      "Title" , "The title of the publication." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The title of the publication." ;
+        sh:name         "Title" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :title ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#319ed60e5580c83fad7abee60caf5762>
+        a               sh:PropertyShape ;
+        rdfs:label      "has keyword" , "Links a publication to its keywords." ;
+        sh:class        :Keyword ;
+        sh:description  "Links a publication to its keywords." ;
+        sh:name         "has keyword" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         :hasKeyword .
+
+<https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7>
+        a               sh:PropertyShape ;
+        rdfs:label      "Topic" , "The name of the topic." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The name of the topic." ;
+        sh:name         "Topic" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :topic ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#0a7a40332fa9267d2204ab3e143614b3>
+        a               sh:PropertyShape ;
+        rdfs:label      "Introduction" , "The introduction of the publication." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The introduction of the publication." ;
+        sh:name         "Introduction" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :introduction ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#6afa9e45ce0bf9eefdb0c7316f5573d3>
+        a               sh:NodeShape ;
+        rdfs:label      "Topic" ;
+        sh:description  "Represents a topic associated with a publication." ;
+        sh:name         "Topic" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#e82c9662ccf7c2f6b7e749f6fd69baf7> ;
+        sh:targetClass  :Topic .
+
+<https://astrea.linkeddata.es/shapes#61e0b83d4dcd64b24ff23c3a4a45de8b>
+        a               sh:PropertyShape ;
+        rdfs:label      "Organisation" , "The organisation this publication belongs to." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The organisation this publication belongs to." ;
+        sh:name         "Organisation" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :organisation ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#64d8b0bf748fcb510bec96d7969e32d4>
+        a               sh:PropertyShape ;
+        rdfs:label      "DOI" , "The DOI of the publication." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The DOI of the publication." ;
+        sh:name         "DOI" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :doi ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#3c4a14c2752e66fdd5ced87016a7df0a>
+        a               sh:PropertyShape ;
+        rdfs:label      "Publication Date" , "The publication date." ;
+        sh:datatype     xsd:date ;
+        sh:description  "The publication date." ;
+        sh:name         "Publication Date" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :publicationDate ;
+        sh:pattern      "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054>
+        a               sh:PropertyShape ;
+        rdfs:label      "Keyword" , "The name of the keyword." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The name of the keyword." ;
+        sh:name         "Keyword" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :keyword ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#3d096fa003ce876bfee4760d01ae0244>
+        a               sh:PropertyShape ;
+        rdfs:label      "Conclusion" , "The conclusion of the publication." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The conclusion of the publication." ;
+        sh:name         "Conclusion" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :conclusion ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#7db51b70abdb2844d4b2ed88c07897b4>
+        a               sh:PropertyShape ;
+        rdfs:label      "Language" , "The language of the publication." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The language of the publication." ;
+        sh:name         "Language" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :language ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#ef397462daf3a61e5a272e9f477caf34>
+        a               sh:PropertyShape ;
+        rdfs:label      "Abstract" , "The abstract of the publication." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The abstract of the publication." ;
+        sh:name         "Abstract" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :abstract ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#43bd5a3ae6334ba4fee1a2c30e69c492>
+        a               sh:PropertyShape ;
+        rdfs:label      "Publisher" , "The publisher of the publication." ;
+        sh:datatype     xsd:string ;
+        sh:description  "The publisher of the publication." ;
+        sh:name         "Publisher" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         :publisher ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#258412aef44e05098a7099ddb811573b>
+        a               sh:NodeShape ;
+        rdfs:label      "Domain" ;
+        sh:description  "Represents a subject domain of a publication." ;
+        sh:name         "Domain" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#4d255d2a6c2b67aee67c8ef80dc92345> ;
+        sh:targetClass  :Domain .
+
+<https://astrea.linkeddata.es/shapes#d3eecd8a66ed803cbed106ebf4269ad0>
+        a               sh:NodeShape ;
+        rdfs:label      "Keyword" ;
+        sh:description  "Represents a keyword associated with a publication." ;
+        sh:name         "Keyword" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#95821eff026e9a026e88e3917b2c4054> ;
+        sh:targetClass  :Keyword .

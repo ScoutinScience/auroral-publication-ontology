@@ -1,0 +1,88 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#abstract"
+    },
+    "affiliation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#affiliation"
+    },
+    "score" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#score"
+    },
+    "pdfUrl" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#pdfUrl"
+    },
+    "publicationDate" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#publicationDate"
+    },
+    "Publication" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Publication"
+    },
+    "matchScore" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#matchScore"
+    },
+    "author" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#author"
+    },
+    "doi" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#doi"
+    },
+    "organisation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#organisation"
+    },
+    "conclusion" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#conclusion"
+    },
+    "Topic" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Topic"
+    },
+    "Domain" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Domain"
+    },
+    "hasAuthor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasAuthor"
+    },
+    "introduction" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#introduction"
+    },
+    "hasTopic" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasTopic"
+    },
+    "keyword" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#keyword"
+    },
+    "domain" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#domain"
+    },
+    "hasKeyword" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasKeyword"
+    },
+    "Keyword" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Keyword"
+    },
+    "title" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#title"
+    },
+    "publisher" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#publisher"
+    },
+    "Author" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Author"
+    },
+    "hasDomain" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasDomain"
+    },
+    "language" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#language"
+    },
+    "hasAffiliation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#hasAffiliation"
+    },
+    "topic" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#topic"
+    },
+    "Affiliation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/publication#Affiliation"
+    }
+  }
+}

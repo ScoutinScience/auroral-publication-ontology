@@ -91,6 +91,22 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "Abstract" .
 
 
+###  https://auroral.iot.linkeddata.es/def/publication#affiliation
+:affiliation rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Affiliation ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The name of the affiliation." ;
+             rdfs:label "Affiliation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#author
+:author rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Author ;
+        rdfs:range xsd:string ;
+        rdfs:comment "The name of the author." ;
+        rdfs:label "Author" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/publication#conclusion
 :conclusion rdf:type owl:DatatypeProperty ;
             rdfs:domain :Publication ;
@@ -107,12 +123,28 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:label "DOI" .
 
 
+###  https://auroral.iot.linkeddata.es/def/publication#domain
+:domain rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Domain ;
+        rdfs:range xsd:string ;
+        rdfs:comment "The name of the domain." ;
+        rdfs:label "Domain" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/publication#introduction
 :introduction rdf:type owl:DatatypeProperty ;
               rdfs:domain :Publication ;
               rdfs:range xsd:string ;
               rdfs:comment "The introduction of the publication." ;
               rdfs:label "Introduction" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#keyword
+:keyword rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Keyword ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The name of the keyword." ;
+         rdfs:label "Keyword" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/publication#language
@@ -136,7 +168,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:domain :Publication ;
               rdfs:range xsd:string ;
               rdfs:comment "The organisation this publication belongs to." ;
-              rdfs:label "Publisher" .
+              rdfs:label "Organisation" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/publication#pdfUrl
@@ -167,7 +199,7 @@ xsd:date rdf:type rdfs:Datatype .
 :score rdf:type owl:DatatypeProperty ;
        rdfs:domain :Publication ;
        rdfs:range xsd:float ;
-       rdfs:comment "The score of the publication." ;
+       rdfs:comment "The business potential score of the publication." ;
        rdfs:label "Score" .
 
 
@@ -177,6 +209,14 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:range xsd:string ;
        rdfs:comment "The title of the publication." ;
        rdfs:label "Title" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#topic
+:topic rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Topic ;
+       rdfs:range xsd:string ;
+       rdfs:comment "The name of the topic." ;
+       rdfs:label "Topic" .
 
 
 #################################################################

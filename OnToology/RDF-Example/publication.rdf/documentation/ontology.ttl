@@ -1,0 +1,292 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/publication#abstract
+<https://auroral.iot.linkeddata.es/def/publication#abstract> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#affiliation
+<https://auroral.iot.linkeddata.es/def/publication#affiliation> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#author
+<https://auroral.iot.linkeddata.es/def/publication#author> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#conclusion
+<https://auroral.iot.linkeddata.es/def/publication#conclusion> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#doi
+<https://auroral.iot.linkeddata.es/def/publication#doi> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#domain
+<https://auroral.iot.linkeddata.es/def/publication#domain> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#hasAffiliation
+<https://auroral.iot.linkeddata.es/def/publication#hasAffiliation> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#hasAuthor
+<https://auroral.iot.linkeddata.es/def/publication#hasAuthor> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#hasDomain
+<https://auroral.iot.linkeddata.es/def/publication#hasDomain> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#hasKeyword
+<https://auroral.iot.linkeddata.es/def/publication#hasKeyword> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#hasTopic
+<https://auroral.iot.linkeddata.es/def/publication#hasTopic> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#introduction
+<https://auroral.iot.linkeddata.es/def/publication#introduction> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#keyword
+<https://auroral.iot.linkeddata.es/def/publication#keyword> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#language
+<https://auroral.iot.linkeddata.es/def/publication#language> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#matchScore
+<https://auroral.iot.linkeddata.es/def/publication#matchScore> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#organisation
+<https://auroral.iot.linkeddata.es/def/publication#organisation> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#pdfUrl
+<https://auroral.iot.linkeddata.es/def/publication#pdfUrl> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#publicationDate
+<https://auroral.iot.linkeddata.es/def/publication#publicationDate> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#publisher
+<https://auroral.iot.linkeddata.es/def/publication#publisher> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#score
+<https://auroral.iot.linkeddata.es/def/publication#score> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#title
+<https://auroral.iot.linkeddata.es/def/publication#title> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#topic
+<https://auroral.iot.linkeddata.es/def/publication#topic> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/publication#Affiliation
+<https://auroral.iot.linkeddata.es/def/publication#Affiliation> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Author
+<https://auroral.iot.linkeddata.es/def/publication#Author> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Domain
+<https://auroral.iot.linkeddata.es/def/publication#Domain> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword
+<https://auroral.iot.linkeddata.es/def/publication#Keyword> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Publication
+<https://auroral.iot.linkeddata.es/def/publication#Publication> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Topic
+<https://auroral.iot.linkeddata.es/def/publication#Topic> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/publication#Affiliation1
+<https://auroral.iot.linkeddata.es/def/publication#Affiliation1> rdf:type owl:NamedIndividual ,
+                                                                          <https://auroral.iot.linkeddata.es/def/publication#Affiliation> ;
+                                                                 <https://auroral.iot.linkeddata.es/def/publication#affiliation> "Universidad Politécnica de Madrid (UPM-CSIC)" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Author1
+<https://auroral.iot.linkeddata.es/def/publication#Author1> rdf:type owl:NamedIndividual ,
+                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author> ;
+                                                            <https://auroral.iot.linkeddata.es/def/publication#author> "David Perez-Saura" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Author2
+<https://auroral.iot.linkeddata.es/def/publication#Author2> rdf:type owl:NamedIndividual ,
+                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author> ;
+                                                            <https://auroral.iot.linkeddata.es/def/publication#author> "Miguel Fernandez-Cortizas" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Author3
+<https://auroral.iot.linkeddata.es/def/publication#Author3> rdf:type owl:NamedIndividual ,
+                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author> ;
+                                                            <https://auroral.iot.linkeddata.es/def/publication#author> "Pascual Campoy" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Author4
+<https://auroral.iot.linkeddata.es/def/publication#Author4> rdf:type owl:NamedIndividual ,
+                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author> ;
+                                                            <https://auroral.iot.linkeddata.es/def/publication#author> "Pedro Arias-Perez" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Author5
+<https://auroral.iot.linkeddata.es/def/publication#Author5> rdf:type owl:NamedIndividual ,
+                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author> ;
+                                                            <https://auroral.iot.linkeddata.es/def/publication#author> "Rafael Perez-Segui" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Domain1
+<https://auroral.iot.linkeddata.es/def/publication#Domain1> rdf:type owl:NamedIndividual ,
+                                                                     <https://auroral.iot.linkeddata.es/def/publication#Domain> ;
+                                                            <https://auroral.iot.linkeddata.es/def/publication#domain> "Engineering" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#ExamplePublication
+<https://auroral.iot.linkeddata.es/def/publication#ExamplePublication> rdf:type owl:NamedIndividual ,
+                                                                                <https://auroral.iot.linkeddata.es/def/publication#Publication> ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#abstract> "In recent years, the use of unmanned aerial vehicles has spread across different fields of the industry due to their ease of deployment and minimal operational risk. Firefighting is a dangerous task for the humans involved, in which the use of UAVs presents itself as a good first-action protocol for a rapid response to an incipient fire because of their safety and speed of action. Current research is mainly focused on wildland fires, but fires in urban environments are barely mentioned in the bibliography. To motivate the research on this topic, ICUAS'22 organized an international competition inspired by this mission, with the challenge of a UAV traversing an area populated by obstacles, finding a target, and precisely throwing a ball to it. For this competition, the Computer Vision and Aerial Robotics (CVAR-UPM) team developed a solution composed of multiple modules and structured by a mission planner. In this paper, we describe our approach and the developed architecture that led us to be awarded the first prize in the competition." ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#conclusion> "We developed an architecture that performed well in a simulated urban environment. It has been tested in ICUAS'22 first international UAV competition, qualifying for the finals with the highest score in the classification phase and winning the real environment challenge with 3 goals, more than any other team, and also being the fastest solution, completing the mission with an average time of 20 seconds. The solution designed is composed of a set of modules in charge of different tasks, and above all of them, a mission planner that manages them to complete the mission. Furthermore, to avoid restrictions on the control modes of the platform provided for the competition, a speed controller has been created that translates the desired velocity into position references. Due to the modularity of this architecture, it is designed to be able to upgrade, change, or add the necessary modules to be used in a more realistic mission than the one faced in the competition. This could make this framework a good starting point for addressing the application of UAVs to urban firefighting, or similar. The development of the trajectory generation algorithm for ball throwing has been conditioned by the lack of access to low-level control of UAV movement. Future work should develop more accurate algorithms to perform this task with full UAV control capabilities. To bring the problem closer to real applications, it is necessary to replace the external positioning device with the development of a self-localization system, adapted to urban environments in outdoor flights. In the same line of research, the simplification of the AR tag must be replaced by visual detection of real fires, as well as determining the most effective point to release the fire extinguishing device. In addition, adding an exception handler to the mission planner, e.g., if the route planner fails or if the ball is not thrown, will make the system more robust. Finally, another research path would be to compare the algorithms developed with the performance of a Neural Network trained through the use of Imitation Learning or Reinforcement Learning techniques. This is interesting because of the great efficiency of Neural Networks in this type of application and their great capacity for adaptation to uncontrolled environments, such as in emergencies." ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#doi> "10.1007/s10846-023-01883-6" ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#hasAffiliation> <https://auroral.iot.linkeddata.es/def/publication#Affiliation1> ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#hasAuthor> <https://auroral.iot.linkeddata.es/def/publication#Author1> ,
+                                                                                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author2> ,
+                                                                                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author3> ,
+                                                                                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author4> ,
+                                                                                                                                     <https://auroral.iot.linkeddata.es/def/publication#Author5> ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#hasDomain> <https://auroral.iot.linkeddata.es/def/publication#Domain1> ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#hasKeyword> <https://auroral.iot.linkeddata.es/def/publication#Keyword1> ,
+                                                                                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword3> ,
+                                                                                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword4> ,
+                                                                                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword5> ,
+                                                                                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword6> ,
+                                                                                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword7> ,
+                                                                                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword8> ,
+                                                                                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword9> ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#hasTopic> <https://auroral.iot.linkeddata.es/def/publication#Topic1> ,
+                                                                                                                                    <https://auroral.iot.linkeddata.es/def/publication#Topic2> ,
+                                                                                                                                    <https://auroral.iot.linkeddata.es/def/publication#Topic3> ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#introduction> "In recent years, the use of unmanned aerial vehicles has spread across different fields of the industry due to their ease of deployment and minimal operational risk. Firefighting is a dangerous task for the humans involved, in which the use of UAVs presents itself as a good first-action protocol for a rapid response to an incipient fire because of their safety and speed of action. Current research is mainly focused on wildland fires, but fires in urban environments are barely mentioned in the bibliography. To motivate the research on this topic, ICUAS'22 organized an international competition inspired by this mission, with the challenge of a UAV traversing an area populated by obstacles, finding a target, and precisely throwing a ball to it. For this competition, the Computer Vision and Aerial Robotics (CVAR-UPM) team developed a solution composed of multiple modules and structured by a mission planner. In this paper, we describe our approach and the developed architecture that led us to be awarded the first prize in the competition. In recent years, unmanned aerial vehicles (UAVs) are being used in more and more fields across the industry because they are easy to deploy and have minimal operational risk. Examples range from industrial inspection or search and rescue to volcano monitoring. One of the fields of interest for their use is firefighting, since the dangerousness of the task combined with the importance of a quick reaction. Fires can spread quickly, damaging not only people, but also the armature of buildings or similar structures, and consuming oxygen in enclosed spaces. Therefore, the use of UAVs could be a good first-action protocol as a quick response to a starting fire, due to their safety and speed of action. Its fast deployment and ability to reach places of difficult access permit them to reach the fire easier than a human team with any other kind of tool or vehicle. Current research focuses mainly on wildland fires, but fires in urban environments are hardly mentioned in the literature. Urban firefighting has its own peculiarities. Buildings are much taller than trees, so the clearance height is much higher than in a natural environment. Consequently, approaching the fire zone may imply to plan a route between buildings while avoiding collision with them. In addition, the fire might emerged inside constructions, only accessed by their exterior windows. This, coupled with the limited payload of drones designed for city flying, suggests that launching fire suppression devices through windows from a UAV becomes a strategy to be taken into account. Nowadays, the tasks developed for drones are mainly piloted by humans from the ground. But current research in aerial robotics is focused on increasing drones autonomy, making possible to complete the mission without human intervention. In this situation, the 2022 International Conference on Unmanned Aircraft Systems (ICUAS'22) organized its first UAV competition, designed to simulate the mission of extinguishing a fire inside a building by precisely throwing a spherical extinguishing device through a window or similar opening. The competition consisted of two parts: a virtual phase for classification and a real final phase at the conference venue in Dubrovnik, Croatia. To tackle the challenge, we developed a modular framework, where each module is designed to perform one task. Our solution also proposes a mission planner algorithm for activating and deactivating each module when needed. In the competition, we tested our approach in the virtual environment, obtaining first place in the classification phase. Moreover, we brought the system into the real environment with great results, winning the finals against other finalist teams from around the world. In this paper, we describe our approach and the solution developed for this challenge. The main contribution of this work is the design of a framework that can be used in a simplified urban firefighting mission. Besides, we would like to highlight the mission planner that provides a structured behavior to the solution, a seek strategy for target detection, and a throwing maneuver using speed commands. The rest of this paper is organized as follows: Section 2 provides related work relevant to this project. Section 3 describes the challenge and its constraints. Section 4 presents our solution, describing in detail each module that composes it. Section 5 describes the scenarios faced in both phases of the competition, and Section 6 presents the results and subsequent discussion. Finally, Section 7 explains conclusions and future work." ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#language> "English" ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#matchScore> 47.28 ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#organisation> "Universidad Politécnica de Madrid" ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#pdfUrl> "https://doi.org/10.1007/s10846-023-01883-6"^^xsd:anyURI ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#publicationDate> "2023-07-19"^^xsd:date ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#publisher> "Journal of Intelligent & Robotic Systems" ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#score> 80.03 ;
+                                                                       <https://auroral.iot.linkeddata.es/def/publication#title> "Urban Firefighting Drones: Precise Throwing from UAV" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword1
+<https://auroral.iot.linkeddata.es/def/publication#Keyword1> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "UAV" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword2
+<https://auroral.iot.linkeddata.es/def/publication#Keyword2> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "Urban firefighting" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword3
+<https://auroral.iot.linkeddata.es/def/publication#Keyword3> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "Firefighting" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword4
+<https://auroral.iot.linkeddata.es/def/publication#Keyword4> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "Ball-throwing" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword5
+<https://auroral.iot.linkeddata.es/def/publication#Keyword5> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "Competition" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword6
+<https://auroral.iot.linkeddata.es/def/publication#Keyword6> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "Mission planning" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword7
+<https://auroral.iot.linkeddata.es/def/publication#Keyword7> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "Motion planning" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword8
+<https://auroral.iot.linkeddata.es/def/publication#Keyword8> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "Sensing" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Keyword9
+<https://auroral.iot.linkeddata.es/def/publication#Keyword9> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/publication#Keyword> ;
+                                                             <https://auroral.iot.linkeddata.es/def/publication#keyword> "Perception" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Topic1
+<https://auroral.iot.linkeddata.es/def/publication#Topic1> rdf:type owl:NamedIndividual ,
+                                                                    <https://auroral.iot.linkeddata.es/def/publication#Topic> ;
+                                                           <https://auroral.iot.linkeddata.es/def/publication#topic> "Unmanned aerial vehicle" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Topic2
+<https://auroral.iot.linkeddata.es/def/publication#Topic2> rdf:type owl:NamedIndividual ,
+                                                                    <https://auroral.iot.linkeddata.es/def/publication#Topic> ;
+                                                           <https://auroral.iot.linkeddata.es/def/publication#topic> "Trajectory Generation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/publication#Topic3
+<https://auroral.iot.linkeddata.es/def/publication#Topic3> rdf:type owl:NamedIndividual ,
+                                                                    <https://auroral.iot.linkeddata.es/def/publication#Topic> ;
+                                                           <https://auroral.iot.linkeddata.es/def/publication#topic> "Computer vision" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
